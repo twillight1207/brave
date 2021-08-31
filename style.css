@@ -1,0 +1,36 @@
+body {
+    background-color: #f1ecc2;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #353b6d;
+}
+
+.building__first {
+    position: absolute;
+    left: 97px;
+    top: 350px;
+}
+
+.floor {
+    margin-bottom: 20px;
+}
+
+
+.floor span {
+    display: inline-block;
+    background-color: #f4d146;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.floor .floor__red {
+    background-color: rgb(226, 32, 106);
+}
