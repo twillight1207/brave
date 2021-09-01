@@ -34,3 +34,13 @@ h1 {
 .floor .floor__red {
     background-color: rgb(226, 32, 106);
 }
+
+@keyframes blinkWindow {
+    50% {
+        opacity: 0;
+    }
+}
+
+.animatedWindow {
+    animation: blinkWindow 1s step-end;
+}
