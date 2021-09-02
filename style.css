@@ -12,18 +12,42 @@ h1 {
     color: #353b6d;
 }
 
-.building__first {
+.building-first {
     position: absolute;
     left: 97px;
     top: 350px;
 }
 
-.floor {
+.building-third {
+    position: absolute;
+    left: 640px;
+    bottom: 120px;
+}
+
+.building-fourth {
+    position: absolute;
+    left: 636px;
+    bottom: -65px;
+}
+
+.building-fifth {
+    position: absolute;
+    left: 720px;
+    bottom: -65px;
+}
+
+.building-first__floor {
     margin-bottom: 20px;
 }
 
+.building-third__floor,
+.building-fourth__floor,
+.building-fifth__floor {
+    margin-bottom: 5px;
+}
 
-.floor span {
+
+.building-first__floor span {
     display: inline-block;
     background-color: #f4d146;
     width: 20px;
@@ -31,7 +55,26 @@ h1 {
     margin: 0 5px;
 }
 
-.floor .floor__red {
+.building-third__floor span {
+    display: inline-block;
+    background-color: #f4d146;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+}
+
+.building-fourth__floor span,
+.building-fifth__floor span{
+    display: inline-block;
+    background-color: #f4d146;
+    width: 22px;
+    height: 7px;
+    margin: 0 5px;
+}
+
+.building-first__floor .window__red,
+.building-third__floor .window__red,
+.building-fourth__floor .window__red {
     background-color: rgb(226, 32, 106);
 }
 
