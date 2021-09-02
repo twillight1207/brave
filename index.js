@@ -9,30 +9,21 @@ function genRandomNum() {
   return randomNumbers;
 }
 
-
-// span list 중 선택
-function chooseAnimated() {
-  span1.classList.add("animatedWindow");
-  span2.classList.add("animatedWindow");
-  span3.classList.add("animatedWindow");
+// class 확인 및 제거, 추가 작업 --- 이게 최선인가?
+function checkClass() {
+  const randomNumbers = genRandomNum();
+  for(let i = 0; i < 40; i++) {
+    if (flick[i].classList.contains("animatedWindow") === true) {
+      flick[i].classList.remove("animatedWindow");
+    } else {
+      if (randomNumbers.includes(i)) {
+        flick[i].classList.add("animatedWindow");
+      } else {
+        continue;
+      }
+    }
+  }
 }
-
-// classname 제거
-function removeAnimated() {
-  span1.classList.remove("animatedWindow");
-  span2.classList.remove("animatedWindow");
-  span3.classList.remove("animatedWindow");
-}
-
-
 
 // 1초마다 함수 반복
-const randomNumbers = genRandomNum();
-const span1 = flick[randomNumbers[0]];
-const span2 = flick[randomNumbers[1]];
-const span3 = flick[randomNumbers[2]];
-setInterval(chooseAnimated, 1000);
-setTimeout(function run() {
-  removeAnimated();
-  setTimeout(run, 1000);
-}, 1000);
+setInterval(checkClass, 1000);
