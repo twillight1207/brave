@@ -98,6 +98,7 @@ h1 {
 .building-first__floor .window__red,
 .building-third__floor .window__red,
 .building-fourth__floor .window__red,
+.building-sixth__floor .window__red,
 .building-seventh__floor .window__red {
     background-color: rgb(226, 32, 106);
 }
