@@ -2,6 +2,7 @@ const first_flick = document.querySelectorAll(".building-first__floor span");
 const third_flick = document.querySelectorAll(".building-third__floor span");
 const fourth_flick = document.querySelectorAll(".building-fourth__floor span");
 const fifth_flick = document.querySelectorAll(".building-fifth__floor span");
+const seventh_flick = document.querySelectorAll(".building-seventh__floor span");
 
 // random 숫자 리스트 만들기
 function genRandomNum(num, range) {
@@ -18,7 +19,7 @@ function genRandomNum(num, range) {
 function checkClass(m, n, obj) {
   const arr = Array.from(obj);
   const randomNumbers = genRandomNum(m, n);
-  for(let i = 0; i < 40; i++) {
+  for(let i = 0; i < n; i++) {
     if (arr[i].classList.contains("animatedWindow") === true) {
       arr[i].classList.remove("animatedWindow");
     } else {
@@ -36,6 +37,7 @@ function windowFunction() {
   checkClass(1, 8, third_flick);
   checkClass(1, 12, fourth_flick);
   checkClass(5, 12, fifth_flick);
+  checkClass(10, 30, seventh_flick);
 }
 
 // 1초마다 함수 반복

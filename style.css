@@ -36,18 +36,33 @@ h1 {
     bottom: -65px;
 }
 
-.building-first__floor {
+.building-sixth {
+    position: absolute;
+    right: 455px;
+    top: 350px;
+}
+
+.building-seventh {
+    position: absolute;
+    right: 136px;
+    bottom: -80px;
+}
+
+.building-first__floor,
+.building-seventh__floor {
     margin-bottom: 20px;
 }
 
 .building-third__floor,
 .building-fourth__floor,
-.building-fifth__floor {
+.building-fifth__floor,
+.building-sixth__floor {
     margin-bottom: 5px;
 }
 
 
-.building-first__floor span {
+.building-first__floor span,
+.building-sixth__floor span {
     display: inline-block;
     background-color: #f4d146;
     width: 20px;
@@ -72,9 +87,18 @@ h1 {
     margin: 0 5px;
 }
 
+.building-seventh__floor span  {
+    display: inline-block;
+    background-color: #f4d146;
+    width: 12px;
+    height: 25px;
+    margin: 0 8px;
+}
+
 .building-first__floor .window__red,
 .building-third__floor .window__red,
-.building-fourth__floor .window__red {
+.building-fourth__floor .window__red,
+.building-seventh__floor .window__red {
     background-color: rgb(226, 32, 106);
 }
 
