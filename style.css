@@ -112,3 +112,32 @@ h1 {
 .animatedWindow {
     animation: blinkWindow 1s step-end;
 }
+
+.cog-first {
+    position: absolute;
+    right: 120px;
+    top: 370px;
+}
+
+.cog-second {
+    position: absolute;
+    right: 230px;
+    top: 340px;
+}
+
+@keyframes cogRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.cog-first .cog-big {
+    animation: cogRotate 8s linear infinite;
+}
+
+.cog-second .cog-small {
+    animation: cogRotate 4s linear infinite;
+}
