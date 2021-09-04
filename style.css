@@ -141,3 +141,34 @@ h1 {
 .cog-second .cog-small {
     animation: cogRotate 4s linear infinite;
 }
+
+.tablets {
+    width: 180px;
+    position: absolute;
+    left: 342px;
+    bottom: -80px;
+}
+
+@keyframes reverseTablet {
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes reverseTablet2 {
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+.tablets .tablet-reverse {
+    transform: rotate(180deg);
+    animation: reverseTablet2 2s step-end infinite;
+}
+
+.tablets img {
+    display: inline-block;
+    margin: 10px 5px;
+    animation: reverseTablet 2s step-end infinite;
+}
+
